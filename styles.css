@@ -140,38 +140,12 @@ body{
 .alt-note{color:var(--muted);font-size:13px}
 
 /* subtle transitions for theme changes */
-body, .card, .hero-card, .feature, .site-header, .theme-toggle, .btn {
+body, .card, .hero-card, .feature, .site-header, .btn {
   transition: background-color 240ms ease, color 240ms ease, border-color 240ms ease, box-shadow 240ms ease;
 }
-
-/* Theme: light override and refined design */
-[data-theme="light"]{
-  --bg: linear-gradient(180deg, #f6f8fa 0%, #f1f5f9 100%);
-  --card: #ffffff;
-  --muted: #50606e;
-  --accent: #0b6b53; /* deep teal */
-  --accent-2: #4758d8; /* dignified indigo */
-  --glass: rgba(2,6,23,0.04);
-  --text: #071426; /* very dark slate for text */
-  --header-bg: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(250,250,250,0.6));
-  --header-border: rgba(7,20,38,0.06);
-  --btn-foreground: #021; /* dark text for buttons in light theme */
-  --btn-ghost-text: #50606e;
-  /* Light-theme button gradient: slightly stronger to remain clear on white */
-  --btn-gradient: linear-gradient(90deg, rgba(11,107,83,0.95), rgba(71,88,216,0.95));
-  --btn-shadow: 0 8px 24px rgba(11,107,83,0.08);
-}
-
-.theme-toggle{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:8px 10px;border-radius:10px;margin-left:12px;cursor:pointer;font-size:16px}
-.theme-toggle:hover{color:var(--text)}
-
 /* Button focus states for accessibility */
-.btn:focus, .nav a.cta:focus, .theme-toggle:focus{
+.btn:focus, .nav a.cta:focus{
   outline:none;
   box-shadow:0 6px 22px rgba(11,107,83,0.14);
   border-color:var(--accent);
 }
-
-/* Improve contrast for nav links in light mode */
-[data-theme="light"] .nav a{color:var(--muted)}
-[data-theme="light"] .nav a.cta{color:#fff;background:linear-gradient(90deg,var(--accent),var(--accent-2));box-shadow:0 8px 24px rgba(11,107,83,0.08)}

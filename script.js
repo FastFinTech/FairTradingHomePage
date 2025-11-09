@@ -1,24 +1,5 @@
-// Small interactions: smooth scroll and demo signup
+// Small interactions: smooth scroll and demo signup (dark-theme only)
 document.addEventListener('DOMContentLoaded', function(){
-  // Theme initialization
-  const themeToggleBtn = document.getElementById('theme-toggle');
-  function applyTheme(t){
-    document.documentElement.setAttribute('data-theme', t);
-    if(themeToggleBtn) themeToggleBtn.textContent = t === 'dark' ? '🌙' : '☀️';
-    try{ localStorage.setItem('theme', t); }catch(e){}
-  }
-  let savedTheme = null;
-  try{ savedTheme = localStorage.getItem('theme'); }catch(e){}
-  if(!savedTheme){
-    savedTheme = (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) ? 'light' : 'dark';
-  }
-  applyTheme(savedTheme);
-  if(themeToggleBtn){
-    themeToggleBtn.addEventListener('click', function(){
-      const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      applyTheme(next);
-    });
-  }
   // Smooth scroll for internal links
   document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
     anchor.addEventListener('click', function(e){
