@@ -4,7 +4,7 @@ This repository contains a polished single-page website demonstrating the FairTr
 
 Files:
 
-- `index.html` — Single-page HTML with hero, features, platform, trading room, competition, prop firm sections and contact form.
+- `index.html` — Single-page HTML with hero, backend, platform, trading room, competition, prop firm sections and contact form.
 - `styles.css` — Responsive, professional styles.
 - `script.js` — Small interactions: smooth scrolling and demo signup toast.
 

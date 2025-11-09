@@ -64,7 +64,7 @@ body{
 
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 
-.features-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.backend-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .feature{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:14px;border-radius:10px}
 
 .list{margin:12px 0 0;padding-left:18px;color:var(--muted)}
@@ -125,7 +125,7 @@ body{
 @media (max-width:900px){
   .hero-inner{grid-template-columns:1fr}
   .grid{grid-template-columns:1fr}
-  .features-list{grid-template-columns:1fr}
+  .backend-list{grid-template-columns:1fr}
   .two-col{grid-template-columns:1fr}
   .nav{display:none}
   .logo{width:48px;height:48px}
