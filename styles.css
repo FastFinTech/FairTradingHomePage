@@ -37,8 +37,9 @@ body{
 .nav a.cta{background:var(--btn-gradient);padding:8px 12px;border-radius:8px;color:var(--btn-foreground);box-shadow:var(--btn-shadow);font-weight:600}
 .nav a:hover{color:#fff}
 
-.hero{padding:64px 0}
+.hero{padding:32px 0 64px 0}
 .hero-inner{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start}
+.hero-text{margin-top:0}
 .hero-text h2{margin:0 0 14px;font-size:34px;line-height:1.03}
 .lead{color:var(--muted);font-size:16px}
 .hero-ctas{margin-top:22px}
@@ -122,6 +123,11 @@ body{
 .site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:22px 0;margin-top:32px}
 .footer-inner{display:flex;justify-content:space-between;align-items:center}
 .foot-links a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:13px}
+
+/* Wide view: lift hero card to align first line with main heading */
+@media (min-width:901px){
+  .hero-card{transform:translateY(-18px)}
+}
 
 @media (max-width:900px){
   .hero-inner{grid-template-columns:1fr}
