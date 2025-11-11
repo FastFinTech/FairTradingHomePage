@@ -8,10 +8,46 @@ Files:
 - `styles.css` — Responsive, professional styles.
 - `script.js` — Small interactions: smooth scrolling and demo signup toast.
 
-How to view locally:
+## Development
 
-1. Open the folder in your file manager.
-2. Double-click `index.html` or open it in your browser.
+### Live Preview
+
+To launch a live preview that updates automatically as you edit files:
+
+```bash
+npm run preview
+```
+
+This will start a local server at `http://localhost:8080` that automatically reloads when you save changes.
+
+### Real-Time Collaboration (Live Share)
+
+To collaborate in real-time with your friend directly in the editor:
+
+1. **Install Live Share extension:**
+   - In Cursor, press `Ctrl+Shift+X` (or `Cmd+Shift+X` on Mac) to open Extensions
+   - Search for "Live Share" by Microsoft
+   - Install "Live Share" and "Live Share Audio" (optional, for voice chat)
+
+2. **Start a collaboration session:**
+   - Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) to open Command Palette
+   - Type "Live Share: Start Collaboration Session"
+   - Sign in with GitHub or Microsoft account (first time only)
+   - A link will be copied to your clipboard
+
+3. **Share with your friend:**
+   - Send them the collaboration link (via email, chat, etc.)
+   - They click the link and it will open in their Cursor/VS Code
+   - They'll see your editor in real-time and can edit together!
+
+4. **Features:**
+   - See each other's cursors and edits in real-time
+   - Share terminal sessions (optional)
+   - Share local servers (like the live preview)
+   - Voice chat (if Live Share Audio is installed)
+   - Follow each other's navigation
+
+**Note:** Both of you need to have the Live Share extension installed. The person joining just needs to click the link - no additional setup required!
 
 Notes:
 
