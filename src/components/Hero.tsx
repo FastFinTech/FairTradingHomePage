@@ -29,7 +29,7 @@ export function Hero() {
 
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 backdrop-blur-sm border border-white/10 rounded-full">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              <span className="text-sm text-gray-300">Open Source Trading Ecosystem</span>
+              <span className="text-sm text-gray-300">Open Source Prop Futures Trading Ecosystem</span>
             </div>
 
             <h2 className="text-5xl lg:text-6xl text-white leading-tight">
