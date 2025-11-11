@@ -50,9 +50,10 @@ body{
 /* Subtle hover to increase brightness without being harsh */
 .btn.primary:hover{filter:brightness(1.06);box-shadow:0 10px 26px rgba(2,6,23,0.30)}
 .nav a.cta:hover{filter:brightness(1.04);box-shadow:0 10px 26px rgba(2,6,23,0.22)}
-.hero-card{background:var(--card);padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
-.hero-card h3{margin-top:0}
-.hero-card ul{padding-left:18px;margin:8px 0}
+.hero-card{background:linear-gradient(180deg, rgba(20,28,44,0.4), rgba(11,18,32,0.6));padding:28px;border-radius:12px;border:1px solid rgba(255,255,255,0.05);backdrop-filter:blur(4px)}
+.hero-card h3{margin-top:0;font-size:18px;color:#e6f2ff;margin-bottom:16px}
+.hero-card ul{padding-left:18px;margin:0;line-height:1.7}
+.hero-card li{color:var(--muted);margin:10px 0;font-size:15px}
 
 .section{padding:48px 0}
 .section.alt{background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent)}
