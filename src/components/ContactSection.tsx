@@ -73,7 +73,7 @@ export function ContactSection() {
             <div className="relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8">
               <div className="text-center mb-6">
                 <a
-                  href="https://discord.gg/fairtrading"
+                  href="https://discord.gg/fB4pHcQe"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#5865F2] rounded-xl text-white hover:bg-[#4752C4] transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#5865F2]/50"
