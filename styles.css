@@ -26,7 +26,7 @@ body{
 }
 .container{max-width:var(--max-width);margin:0 auto;padding:28px}
 
-.site-header{backdrop-filter: blur(6px);position:sticky;top:0;background:var(--header-bg, linear-gradient(180deg, rgba(10,14,20,0.6), rgba(10,14,20,0.35)));border-bottom:1px solid var(--header-border, rgba(255,255,255,0.03));z-index:50}
+.site-header{backdrop-filter: blur(6px);background:var(--header-bg, linear-gradient(180deg, rgba(10,14,20,0.6), rgba(10,14,20,0.35)));border-bottom:1px solid var(--header-border, rgba(255,255,255,0.03))}
 .header-inner{display:flex;align-items:center;justify-content:space-between}
 .brand{display:flex;gap:12px;align-items:center}
 .logo{width:72px;height:72px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:800;color:#042;box-shadow:0 8px 22px rgba(127,140,255,0.08);overflow:hidden}
