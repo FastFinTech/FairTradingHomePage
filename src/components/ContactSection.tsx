@@ -123,6 +123,7 @@ export function ContactSection() {
                     <option value="streamer">Streamer/Educator</option>
                     <option value="developer">Software Developer</option>
                     <option value="prop-firm">Prop Firm</option>
+                    <option value="investor">Investor/Sponsor</option>
                     <option value="other">Other</option>
                   </select>
                 </div>

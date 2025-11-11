@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Github } from 'lucide-react';
 import logo from 'figma:asset/58ece3ae699ed2a60521d02495cec62c28ec1e5b.png';
 
 export function Header() {
@@ -52,6 +52,15 @@ export function Header() {
             <button onClick={() => scrollToSection('prop-firms')} className="text-sm text-gray-300 hover:text-white transition-colors">
               For Prop Firms
             </button>
+            <a
+              href="https://github.com/YOUR_USERNAME/fairtrading"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm text-gray-300 hover:text-white transition-colors"
+              title="View on GitHub"
+            >
+              <Github size={18} />
+            </a>
             <button
               onClick={() => scrollToSection('contact')}
               className="px-5 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:shadow-lg hover:shadow-blue-500/50 transition-all"
@@ -88,6 +97,15 @@ export function Header() {
               <button onClick={() => scrollToSection('prop-firms')} className="text-sm text-gray-300 hover:text-white transition-colors text-left">
                 For Prop Firms
               </button>
+              <a
+                href="https://github.com/YOUR_USERNAME/fairtrading"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-sm text-gray-300 hover:text-white transition-colors"
+              >
+                <Github size={18} />
+                <span>GitHub</span>
+              </a>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="px-5 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg text-left"

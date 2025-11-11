@@ -160,16 +160,47 @@ webpack --mode production
 
 - **Environment Variables**: Make sure all Supabase credentials are set in Cloudflare Pages/Workers settings
 
+## Configuration
+
+### GitHub Repository URL
+
+To update the GitHub repository URL throughout the site:
+
+1. **Search and replace** `YOUR_USERNAME/fairtrading` with your actual GitHub repo path:
+   - `/components/FloatingGitHub.tsx` (line 20)
+   - `/components/GetInvolvedSection.tsx` (line 49)
+   - `/components/Header.tsx` (lines with GitHub links)
+
+2. **Update the GitHub API call** in `/components/FloatingGitHub.tsx`:
+   ```typescript
+   // Replace this line (line 22)
+   const response = await fetch('https://api.github.com/repos/microsoft/vscode');
+   // With your actual repo
+   const response = await fetch('https://api.github.com/repos/YOUR_USERNAME/fairtrading');
+   ```
+
+3. **Update stats fetching** in `/components/StatsBar.tsx` if desired
+
 ## Features
 
 ### Homepage Sections
 - **Hero** - Eye-catching introduction with gradient effects
+- **Stats Bar** - Live GitHub stats and social proof
 - **Backend & Simulator** - Data feed and exchange simulation features
 - **Platform** - Developer-first trading platform overview
 - **Trading Rooms** - Live streaming and collaborative trading
 - **Competition Platform** - Interactive visualization with leaderboard
 - **Prop Firms** - Tools and control panel for prop firm management
+- **Get Involved** - Developer, community, and investor CTAs
 - **Contact** - Functional contact form with Supabase backend
+- **Admin Dashboard** - View contact submissions at `/admin`
+
+### Developer & Investor Engagement Features
+- **Floating GitHub Button** - Sticky CTA with star count
+- **GitHub Icon in Header** - Easy access to repository
+- **Get Involved Section** - Three pathways: Developers, Community, Investors
+- **Social Proof Bar** - GitHub stats, Discord, and badges
+- **Investor Option** - Added to contact form dropdown
 
 ### Design Features
 - Dark theme with glassmorphism effects
